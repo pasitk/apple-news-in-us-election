@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Duke St. Arcade: Place with highest risk of bike theft in Cardiff city centre | Pasit Kongkunakornkul</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <title>US Election coverage: A tough challenge to boost Apple’s news business | Pasit Kongkunakornkul</title>
         <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
         <style>
@@ -42,6 +41,9 @@
                 height: 400px;
                 background-image: url('1.jpg');
                 background-position:top;
+                display: flex;
+                justify-content: flex-end;
+                align-items:flex-end;
             }
 
             .headline {
@@ -63,7 +65,18 @@
             }
 
             .image {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+
+            .image-row {
                 text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
             }
 
             .description {
@@ -87,86 +100,31 @@
                 cursor: pointer;
                 transition: 0.3s;
             }
-            /*
-            *   Code for Modal Creation
-            *   Adapted from code in W3Schools.com
-            *   Accessed 9-1-2020
-            *   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
-            */
-            /* The Modal (background) */
-            .modal {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 200px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            
+            .img-credit {
+                width: max-content;
+                padding: 0.5em;
+                background-color: #666666;
+                border-radius: 5px 0 0 0;
+                color: #FFFFFF;
+                font-size: 0.8em;
+                font-style: italic;
             }
 
-            /* Modal Content (image) */
-            .modal-content {
-                margin: auto;
-                display: block;
-                width: 100%;
-            }
-
-            /* Caption of Modal Image */
-            #caption {
-                margin: auto;
-                display: block;
-                width: 80%;
-                max-width: 700px;
-                text-align: center;
-                color: #ccc;
-                padding: 10px 0;
-                height: 150px;
-            }
-
-            /* Add Animation */
-            .modal-content, #caption {  
-                -webkit-animation-name: zoom;
-                -webkit-animation-duration: 0.6s;
-                animation-name: zoom;
-                animation-duration: 0.6s;
-            }
-
-            @-webkit-keyframes zoom {
-                from {-webkit-transform:scale(0)} 
-                to {-webkit-transform:scale(1)}
-            }
-
-            @keyframes zoom {
-                from {transform:scale(0)} 
-                to {transform:scale(1)}
-            }
-
-            /* The Close Button */
-            .close {
+            .image > .img-credit {
                 position: absolute;
-                top: 15px;
-                right: 35px;
-                color: #f1f1f1;
-                font-size: 40px;
-                font-weight: bold;
-                transition: 0.3s;
             }
 
-            .close:hover,
-            .close:focus {
-                color: #bbb;
-                text-decoration: none;
-                cursor: pointer;
+            .chart {
+                text-align: center;
+                margin-top: 2em;
+                margin-bottom: 2em;
             }
-            /* End: Code for Modal Creation */
         </style>
     </head>
     <body>
         <section class="image-lead">
+            <div class="img-credit">Photo: Apple</div>
         </section>
         <section class="header-and-content">
             <header>
@@ -181,9 +139,12 @@
                 This coverage, from our observation, is available in the USA only. Apple said it comprises of curated news, analysis, information, and related data throughout the election from a variety of news sources which Apple has guaranteed as ‘trustworthy’ such as ABC News, CBS News, CNN, FiveThirtyEight, Fox News, etc. Moreover, it has also included guides to important issues, each presidential candidate, and knowledge about news literacy. Apple also has a partnership with ABC News to provide real-time coverage of the key events in the election.
             </p>
             <section class="image">
-                <img id="myImg" src="2.jpg" alt="" width="30%">
-                <img id="myImg" src="3.jpg" alt="" width="30%">
-                <img id="myImg" src="4.jpg" alt="" width="30%">
+                <div class="image-row">
+                    <img id="myImg" src="2.jpg" alt="" width="30%">
+                    <img id="myImg" src="3.jpg" alt="" width="30%">
+                    <img id="myImg" src="4.jpg" alt="" width="30%">
+                </div>
+                <div class="img-credit">Photo: Apple</div>
             </section>
             <p>
                 “Access to quality news and trusted information is always important, and never more so than in an election year,” said Lauren Kern, editor-in-chief of Apple News, in the company press release when it announced a partnership with ABC News on 16 December 2019.
@@ -198,7 +159,7 @@
                 “Apple’s business strategy has changed a bit, it used to be about selling devices.  Increasingly it's about selling services and subscriptions. So, I think its long-term interest is not really and never was about selling advertising, which it has always been a little bit concerned about because from a privacy point of view it takes a very different view from Google and Facebook. It's always been trying to protect the privacy of users and so advertising has always been slightly uncomfortable for Apple. So, its main strategy is really around building these subscription businesses.” said Nic. He also believes that Apple News is now ‘a tool’ to attract people to this ‘paywalled’ service.
             </p>
             <section class="chart">
-                <iframe title="Apple: Total net sales, compared with sales by services (2017-2019)" aria-label="Grouped Bars" id="datawrapper-chart-XNf4b" src="https://datawrapper.dwcdn.net/XNf4b/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="342"></iframe>
+                <iframe title="Apple: Total net sales, compared with sales by services (2017-2019)" aria-label="Grouped Bars" id="datawrapper-chart-XNf4b" src="https://datawrapper.dwcdn.net/XNf4b/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="342"></iframe>
                 <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
             </section>
             <p>
